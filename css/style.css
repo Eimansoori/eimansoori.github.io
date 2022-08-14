@@ -9611,7 +9611,7 @@ h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: #6c757d;
+  background: #343a40;
 }
 
 .progress {
@@ -9637,7 +9637,7 @@ h4, h5, h6 {
 }
 
 .service-item:hover i {
-  background: #dc3545;
+  background: #343a40;
   color: #FFFFFF;
 }
 
