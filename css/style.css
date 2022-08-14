@@ -9629,10 +9629,10 @@ h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #dc3545;
+  border: 2px solid #343a40;
   border-radius: 75px;
   background: #FFFFFF;
-  color: #dc3545;
+  color: #343a40;
   transition: .5s;
 }
 
