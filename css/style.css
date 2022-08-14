@@ -9629,15 +9629,15 @@ h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #78CC6D;
+  border: 2px solid #dc3545;
   border-radius: 75px;
   background: #FFFFFF;
-  color: #78CC6D;
+  color: #dc3545;
   transition: .5s;
 }
 
 .service-item:hover i {
-  background: #78CC6D;
+  background: #dc3545;
   color: #FFFFFF;
 }
 
