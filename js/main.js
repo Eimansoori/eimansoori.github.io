@@ -1,21 +1,59 @@
 (function ($) {
     "use strict";
-    
-    // Dropdown on mouse hover
-    $(document).ready(function () {
-        function toggleNavbarMethod() {
-            if ($(window).width() > 992) {
-                $('.navbar .dropdown').on('mouseover', function () {
-                    $('.dropdown-toggle', this).trigger('click');
-                }).on('mouseout', function () {
-                    $('.dropdown-toggle', this).trigger('click').blur();
-                });
-            } else {
-                $('.navbar .dropdown').off('mouseover').off('mouseout');
-            }
+
+    // Smooth scrolling to section
+    $(".btn-scroll").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            
+            $('html, body').animate({
+                scrollTop: $(this.hash).offset().top - 45
+            }, 1500, 'easeInOutExpo');
         }
-        toggleNavbarMethod();
-        $(window).resize(toggleNavbarMethod);
+    });
+
+    
+    // Typed Initiate
+    if ($('.typed-text-output').length == 1) {
+        var typed_strings = $('.typed-text').text();
+        var typed = new Typed('.typed-text-output', {
+            strings: typed_strings.split(', '),
+            typeSpeed: 100,
+            backSpeed: 20,
+            smartBackspace: false,
+            loop: true
+        });
+    }
+    
+    
+    // Skills
+    $('.skill').waypoint(function () {
+        $('.progress .progress-bar').each(function () {
+            $(this).css("width", $(this).attr("aria-valuenow") + '%');
+        });
+    }, {offset: '80%'});
+
+
+    // Portfolio isotope and filter
+    var portfolioIsotope = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+    $('#portfolio-flters li').on('click', function () {
+        $("#portfolio-flters li").removeClass('active');
+        $(this).addClass('active');
+
+        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    });
+
+
+    // Testimonials carousel
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        dots: true,
+        loop: true,
+        items: 1
     });
     
     
@@ -31,133 +69,5 @@
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;
     });
-
-
-    // Main News carousel
-    $(".main-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        items: 1,
-        dots: true,
-        loop: true,
-        center: true,
-    });
-
-
-    // Tranding carousel
-    $(".tranding-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 2000,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left"></i>',
-            '<i class="fa fa-angle-right"></i>'
-        ]
-    });
-
-
-    // Carousel item 1
-    $(".carousel-item-1").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ]
-    });
-
-    // Carousel item 2
-    $(".carousel-item-2").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        margin: 30,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            }
-        }
-    });
-
-
-    // Carousel item 3
-    $(".carousel-item-3").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        margin: 30,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
-        }
-    });
-    
-
-    // Carousel item 4
-    $(".carousel-item-4").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        margin: 30,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            },
-            1200:{
-                items:4
-            }
-        }
-    });
-    
 })(jQuery);
 

@@ -1,6 +1,6 @@
-  =>  Template Name    : BizNews - Free News Website Template
+  =>  Template Name    : John Doe - Personal CV Website Template
 
-  =>  Template Link    : https://htmlcodex.com/free-news-website-template
+  =>  Template Link    : https://htmlcodex.com/personal-cv-website-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 
