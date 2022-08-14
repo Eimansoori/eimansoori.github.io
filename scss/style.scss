@@ -260,7 +260,7 @@ h4, h5, h6 {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: $primary;
+    background: $dark;
 }
 
 .progress {
@@ -281,7 +281,7 @@ h4, h5, h6 {
     border: 2px solid $primary;
     border-radius: 75px;
     background: #FFFFFF;
-    color: $primary;
+    color: $dark;
     transition: .5s;
 }
 
