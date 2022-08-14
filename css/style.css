@@ -9611,7 +9611,7 @@ h4, h5, h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background: #dc3545;
+  background: #6c757d;
 }
 
 .progress {
@@ -9632,7 +9632,7 @@ h4, h5, h6 {
   border: 2px solid #343a40;
   border-radius: 75px;
   background: #FFFFFF;
-  color: #343a40;
+  color: #6c757d;
   transition: .5s;
 }
 
