@@ -195,7 +195,9 @@ img {
   vertical-align: middle;
   border-style: none;
 }
-
+img hover {
+transform: scale(1.2);
+}
 svg {
   overflow: hidden;
   vertical-align: middle;
