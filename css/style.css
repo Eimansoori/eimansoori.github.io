@@ -7319,7 +7319,9 @@ button.bg-dark:focus {
 .mx-2 {
   margin-right: 0.5rem !important;
 }
-
+.mx-2 hover {
+  transform: scale(1.3);
+}
 .mb-2,
 .my-2 {
   margin-bottom: 0.5rem !important;
