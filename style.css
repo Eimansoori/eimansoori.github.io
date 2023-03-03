@@ -49,6 +49,10 @@ hr {
 
 section {
     padding: 100px 200px;
+    background: url(images/image.png) no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    opacity: 0.8
 }
 
 .main {
@@ -110,6 +114,7 @@ section {
     color: #3a6cf4;
     font-size: 1.7em;
     padding-right: 30px;
+    transform: scale(1.1);
 }
 .social-icons a :hover{
     color: rgb(3, 3, 3);
