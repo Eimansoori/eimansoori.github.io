@@ -49,10 +49,11 @@ hr {
 
 section {
     padding: 100px 200px;
-    background: url(images/image.png) no-repeat;
+    background: url(images/image.png) no-repeat ;
     background-position: right;
     background-attachment: fixed;
-    opacity: 0.8
+
+    
 }
 
 .main {
@@ -60,10 +61,10 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: flex-end;
-    background: url(images/image.png) no-repeat;
+    
     background-position: right;
     background-attachment: fixed;
-    opacity: 0.8
+    
 }
 
 .main h2 {
