@@ -54,15 +54,18 @@ section {
 
     
 }
+body{
+    background: url(images/image.png) no-repeat;
+    background-position: right;
+    background-attachment: fixed;
 
+}
 .main {
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: flex-end;
-    background: url(images/image.png) no-repeat;
-    background-position: right;
-    background-attachment: fixed;
+
     
 }
 
