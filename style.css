@@ -21,7 +21,7 @@ header {
 }
 
 .logo{
-    text-decoration: none;
+    text-decoration:gold;
     color: #3a6cf4;
     font-weight: 700;
     font-size: 1.8em;
@@ -49,9 +49,8 @@ hr {
 
 section {
     padding: 100px 200px;
-    background: url(images/image.png) no-repeat ;
-    background-position: right;
-    background-attachment: fixed;
+    backface-visibility: hidden;
+    
 
     
 }
@@ -61,7 +60,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: flex-end;
-    
+    background: url(images/image.png) no-repeat;
     background-position: right;
     background-attachment: fixed;
     
@@ -143,7 +142,7 @@ section {
     background-color: #fff;
     width: 20.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 25px;
     margin: 15px;
     transition: 0.7s ease;
@@ -151,12 +150,18 @@ section {
 
 .card:hover {
     transform: scale(1.1);
+    
 }
 
 .card .icon {
     color: #424242;
     font-size: 2em;
     text-align: center;
+}
+
+.icon :hover{
+
+    color: #3a6cf4;
 }
 
 .info {
@@ -185,7 +190,7 @@ section {
     min-height: 14em;
     width: 17em;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 20px;
     transition: 0.7s ease;
 }
@@ -201,6 +206,7 @@ section {
 
 .project-image img{
     width: 100%
+
 }
 
 
@@ -221,6 +227,7 @@ section {
     font-weight: 800;
     margin-top: 10px;
 }
+
 
 .more-details {
     text-decoration: none;
