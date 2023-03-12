@@ -144,7 +144,7 @@ body{
 }
 
 .card {
-    background-color: rgba(252, 251, 251, 0.482);
+    background-color: rgb(252, 251, 251);
     width: 20.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
     border-radius: 5px;
@@ -180,16 +180,13 @@ body{
     margin: 10px;
 }
 
-.projects {
-    background-color:rgba(12, 12, 12, 0.272);
-}
 
 .projects .content{
     margin-top: 30px;
 }
 
 .project-card {
-    background-color: #e5e5ec;
+    background-color: #ffffff;
     box-shadow: 0 5px 25px rgba(1, 1, 1, 0.228);
     
     min-height: 14em;
@@ -245,9 +242,7 @@ body{
     color: #000000;
 }
 
-.contact{
-    background-color: rgba(0, 0, 0, 0.268);
-}
+
 .contact .icon{
     font-size: 4;
 }
