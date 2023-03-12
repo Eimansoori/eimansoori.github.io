@@ -10,7 +10,7 @@
 
 
 header {
-    background-color: #fdf9f9;
+    background-color: #fcfcfc;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -26,6 +26,7 @@ header {
     font-weight: 700;
     font-size: 1.8em;
     text-shadow: #000000;
+    text-transform: uppercase;
 }
 
 .navigation a{
@@ -58,6 +59,7 @@ body{
     background: url(images/image.png) no-repeat;
     background-position: right;
     background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.209);
 
 }
 .main {
@@ -66,7 +68,6 @@ body{
     display: flex;
     align-items: flex-end;
 
-    
 }
 
 .main h2 {
@@ -139,12 +140,13 @@ body{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 .card {
-    background-color: #fff;
+    background-color: rgba(252, 251, 251, 0.482);
     width: 20.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
     border-radius: 5px;
     padding: 25px;
     margin: 15px;
@@ -157,7 +159,7 @@ body{
 }
 
 .card .icon {
-    color: #424242;
+    color: #4242426f;
     font-size: 2em;
     text-align: center;
 }
@@ -179,7 +181,7 @@ body{
 }
 
 .projects {
-    background-color:rgba(255, 255, 255, 0);
+    background-color:rgba(12, 12, 12, 0.272);
 }
 
 .projects .content{
@@ -209,6 +211,7 @@ body{
 
 .project-image img{
     width: 100%
+    
 
 }
 
@@ -226,7 +229,7 @@ body{
 .project-title {
     display: flex;
     justify-content: space-between;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 800;
     margin-top: 10px;
 }
@@ -242,6 +245,9 @@ body{
     color: #000000;
 }
 
+.contact{
+    background-color: rgba(0, 0, 0, 0.268);
+}
 .contact .icon{
     font-size: 4;
 }
@@ -255,7 +261,7 @@ body{
 }
 
 .footer {
-    background-color: #e9e9ed;
+    background-color: #fbf9f9;
     color: rgb(0, 0, 0);
     padding: 2em;
     display: flex;
