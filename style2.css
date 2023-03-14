@@ -1,0 +1,71 @@
+.Main{
+    background-color: #3a6cf4;
+}
+
+header {
+    background-color: #fcfcfc;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px ;
+}
+    .logo{
+    text-decoration:gold;
+    color: #3a6cf4;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-shadow: #000000;
+    text-transform: uppercase;
+    }
+
+
+div.gallery {
+    margin: 50px;
+    border: 1px solid #ccc;
+    float: right;
+    width: auto;
+    padding:auto;
+    
+}
+  
+div.gallery:hover {
+    border: 1px solid #777;
+    
+}
+  
+div.gallery img {
+    width: 300px;
+
+}
+  
+div.gallery:hover {
+
+    transform: scale(1.1);
+}
+
+div.desc {
+    text-align: center;
+}
+
+.Main {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.box{
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: auto;
+    
+}
+.text{
+    text-align: justify;
+}
