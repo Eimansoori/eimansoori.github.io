@@ -55,11 +55,19 @@ section {
 
     
 }
+img{
+    
+    width: 200px;
+    clip-path: circle();
+    pointer-events: fill;
+}
+
 body{
     background: url(images/image.png) no-repeat;
     background-position: right;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.209);
+    background-color: rgba(255, 255, 255, 0.417);
+    
 
 }
 .main {
@@ -87,7 +95,7 @@ body{
 }
 
 .main h3 {
-    color: #bdbdd1;
+    color: #33338398;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
