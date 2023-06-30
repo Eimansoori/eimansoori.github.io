@@ -67,7 +67,6 @@ body{
     background-position: right;
     background-attachment: fixed;
     background-color: rgb(255, 255, 255);
-    
 
 }
 .main {
@@ -75,6 +74,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: flex-end;
+    background-color: #ffffffb0;
 
 }
 
